@@ -1,0 +1,40 @@
+name: Publish POLYD demo
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - uses: actions/configure-pages@v5
+      - name: Build client demonstration
+        run: node scripts/build-pages.mjs
+      - name: Check production bundle
+        run: node scripts/check.mjs
+      - name: Check project paths and demo restrictions
+        run: node scripts/check-pages.mjs
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: .pages-dist
+      - name: Publish
+        id: deployment
+        uses: actions/deploy-pages@v4

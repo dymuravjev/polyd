@@ -1,0 +1,11 @@
+Use case: product-mockup. Generate ONE wide landscape 1800x1000 premium photographic studio still life for a website contact-section background. NOT a website mockup, no UI and no typography.
+
+Reference role: the final dark contact section at bottom of the CENTER COLUMN (02 / Театр процесса) in the attached POLYD homepage comparison image sets the art direction.
+
+Deep warm charcoal graphite #151b1d tabletop and seamless background. At RIGHT HALF ONLY, a partially rolled engineering drawing made of warm off-white paper, with refined faint gray geometrical technical lines, linework has no letters or readable numbers. A second flat technical drawing beneath, and ONE small precisely turned satin stainless steel bushing / compact flange sitting realistically on the paper. The steel has physically convincing anisotropic brushing and broad softbox highlights. Rolled paper curls naturally, realistic paper thickness, soft grounded shadows. Arrangement calm, thoughtful, sculptural but believable, like a refined engineering desk photographed for an industrial design journal. The rolled drawing can be cropped near the far-right edge. No other objects or tools.
+
+Composition: very wide 9:5 landscape. Left 45% of entire image is COMPLETELY EMPTY uninterrupted dark graphite background, no objects, no paperwork, no strong light, no shadow intruding, because actual HTML heading/button will be placed there later. Keep main objects centered around x=78%, y=65%, most object mass below vertical center. Upper-right quiet space too. Fittings and paper stay fully within right half; lower-right may be artfully cropped. The left edge and top edge near #151b1d for continuous background integration.
+
+Lighting: cinematic controlled soft side illumination from upper right, muted realistic light, detailed paper edges and gentle metallic highlights, subtle contact shadows, high-end industrial product photo, not glossy sci-fi. Quiet dark background, no visible horizon. No decorative beams, neon, glowing edges, or fake atmospheric smoke.
+
+Absolutely no readable text, no numbers, no brands, no watermark, no people, no laptop, no UI, no image frame, no rounded image border. Deliver only the photographic asset, not the full comparison board.

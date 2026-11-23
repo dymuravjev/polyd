@@ -1,0 +1,18 @@
+{
+  "origin": "https://polyd-system.ru",
+  "name": "POLYD",
+  "company": "ООО «ВК-КОМПЛЕКТ»",
+  "email": "polyd-system@mail.ru",
+  "phone": "+7 (4852) 71-73-43",
+  "address": "Ярославль, пр-т Машиностроителей, 83",
+  "operatorEmail": "dosings@mail.ru",
+  "operatorContactAddress": "Ярославль, проспект Машиностроителей, 83, офис 212, 2 этаж",
+  "operatorSource": "https://www.dosings.ru/contact-us.html",
+  "legalRevision": "2026-11-23",
+  "legalApproved": false,
+  "retentionPeriod": null,
+  "legalAddress": null,
+  "inn": null,
+  "ogrn": null,
+  "mailTransport": "phpmailer"
+}

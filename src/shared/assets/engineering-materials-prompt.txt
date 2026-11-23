@@ -1,0 +1,12 @@
+Use case: product-mockup / website background asset.
+Create ONE wide 1800x1200 premium photorealistic studio material still life. This is ONLY a raster photographic asset for a website, NOT a webpage or layout, NO TEXT OR UI.
+
+Visual reference: the LIGHT SECOND SECTION of the CENTER COLUMN (02 / Театр процесса) in the supplied POLYD concept board. Use ONLY that section's art direction, not the interface text or other sections.
+
+Subject on RIGHT: a large sculptural satin stainless steel 90-degree pipe elbow, a substantial accurately machined stainless flange with bolts, and a credible industrial ball valve with a restrained BLUE lever handle. A white solid polypropylene rectangular block supports / sits under the fittings. Precise realistic material, microscopic satin brushing, grounded contact shadows, beautiful broad studio softbox reflections, a refined industrial architecture still life. No entire reagent installation, no tank, no mixers, no people. Keep the components physically plausible and connected/supported, not floating. The elbow rises on right and can be artistically cropped near the right/top edges; flange and blue valve still clearly recognizable.
+
+Composition: landscape 3:2. ALL objects confined to the RIGHT 55% of the image. LEFT 45% must be entirely clean, calm, empty warm-mineral background #f3f1ec for actual HTML heading and text added by the developer. No object intrudes into left text space. A seamless luminous warm gray studio wall and tabletop, no visible sharp horizon. Background should be especially smooth/quiet at all image edges for integration with a web section. Floor shadows only beneath the right-side assembly.
+
+Lighting: softly directional high-end product photography, believable steel reflections with broad light sources, soft contact shadows on the pale surface, warm-neutral environment. Premium material realism, restraint, no neon, no decorative gradients, no excessive glow, no dirty workshop.
+
+Constraints: no text whatsoever, no watermarks, no UI, no logos, no image borders, no rounded outer container, no collage, no presentation board. Just the still-life asset.
