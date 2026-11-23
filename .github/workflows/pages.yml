@@ -7,19 +7,17 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: github-pages
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: read
+      pages: read
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
@@ -35,6 +33,32 @@ jobs:
       - uses: actions/upload-pages-artifact@v4
         with:
           path: .pages-dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Wait for artifact metadata
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node --input-type=module <<'JS'
+          const url = `https://api.github.com/repos/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}/artifacts`;
+          for (let attempt = 0; attempt < 12; attempt++) {
+            const response = await fetch(url, {headers: {Authorization: `Bearer ${process.env.GH_TOKEN}`, Accept: 'application/vnd.github+json'}});
+            if (!response.ok) throw new Error(`Artifact metadata: HTTP ${response.status}`);
+            const result = await response.json();
+            if (result.artifacts.some(artifact => artifact.name === 'github-pages' && !artifact.expired)) process.exit(0);
+            await new Promise(resolve => setTimeout(resolve, 3000));
+          }
+          throw new Error('Published artifact metadata is not available');
+          JS
       - name: Publish
         id: deployment
         uses: actions/deploy-pages@v4
